@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Myles T White Construction &#8211; General Contractor</title>
+    <link rel="icon" href="images/favicon-32.jpeg" sizes="32x32" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.11/dist/htmx.min.js"
+      integrity="sha384-2OatzQy1H+Zd/IIrjr1TcuDGqLXeHhbooAyJY1KdQMKnr4LZ22k31GBLdYKHmVjg"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="page-home">
+    <a class="skip-link" href="#content">Skip to content</a>
+    <div
+      hx-get="includes/header.html"
+      hx-trigger="load"
+      hx-swap="outerHTML"
+    ></div>
+    <main id="content">
+      <section
+        class="hero hero-home text-inverse"
+        style="background-image: url(images/harmonmacayalr.jpg)"
+      >
+        <div class="hero-inner">
+          <h1>Building &amp; transforming spaces that feel right at home</h1>
+          <p>
+            Myles White brings over three decades of hands-on experience to
+            residential remodeling in the Portland metro area. A
+            third-generation carpenter, he specializes in kitchen and bath
+            remodels, custom finish carpentry, and full home renovations.
+          </p>
+          <a
+            href="contact.html"
+            class="button button-lg button-outline-inverse mt-7 shadow-lg"
+            >Get a free estimate</a
+          >
+        </div>
+      </section>
+      <section class="content" aria-label="Project galleries">
+        <div class="content-inner">
+          <ul class="gallery-grid">
+            <li>
+              <a class="gallery-card" href="projects.html#kitchen">
+                <img
+                  src="images/stock/kitchen.jpg"
+                  class="border-radius-md"
+                  alt="White kitchen with a marble island and brass faucet."
+                />
+                <span>Kitchen</span>
+              </a>
+            </li>
+            <li>
+              <a class="gallery-card" href="projects.html#bath">
+                <img
+                  src="images/stock/clay-banks-ckdoA-tv9uw-unsplash.jpg"
+                  class="border-radius-md"
+                  alt="Bathroom with a glass shower and a double vanity."
+                />
+                <span>Bath</span>
+              </a>
+            </li>
+            <li>
+              <a class="gallery-card" href="projects.html#living">
+                <img
+                  src="images/stock/francesca-tosolini-l43rLPXCP1M-unsplash.jpg"
+                  class="border-radius-md"
+                  alt="Living room with a wood ceiling beam, gray sofa, and a desk along the far wall."
+                />
+                <span>Living</span>
+              </a>
+            </li>
+            <li>
+              <a class="gallery-card" href="projects.html#exteriors">
+                <img
+                  src="images/stock/eli-chamoun-yGw9lt7MJOE-unsplash.jpg"
+                  class="border-radius-md"
+                  alt="House exterior with a new covered deck under construction."
+                />
+                <span>Exteriors</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="content reviews" aria-labelledby="home-reviews">
+        <div class="content-inner">
+          <h2 id="home-reviews">Reviews</h2>
+          <div class="review-grid">
+            <blockquote class="card review">
+              <p>
+                We loved working with Myles on our guest bathroom makeover and
+                we are thrilled with the results. His work is meticulous and I
+                can honestly attest that he is the tidiest/cleanest contractor
+                EVER! Myles listened to what I wanted and went above and beyond,
+                we will definitely use him again in the future- thank you Myles.
+              </p>
+              <footer>Lisa Mc</footer>
+            </blockquote>
+            <blockquote class="card review">
+              <p>
+                Honest. Goes beyond the expected. Follows up. Hard worker.
+                Confident. He's remodeled most of my house, added a shed, and
+                finished a major French drain project and my basement has been
+                dry ever since. The best.
+              </p>
+              <footer>Erik V</footer>
+            </blockquote>
+            <blockquote class="card review">
+              <p>
+                We have hired Myles to do a few personal jobs for us. One was to
+                remove a window and replace it with a glass door. It turned out
+                wonderfully and looks as if it was there to start. I also had a
+                built-in desk. I asked Myles to design and build a filing
+                cabinet and integrate it into the existing built-in. The
+                carpentry work is top notch. If you didn't know better you would
+                have guessed it was original.
+              </p>
+              <footer>Lara J</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div
+      hx-get="includes/footer.html"
+      hx-trigger="load"
+      hx-swap="outerHTML"
+    ></div>
+    <script src="js/script.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Us &#8211; Myles T White Construction</title>
+    <link rel="icon" href="images/favicon-32.jpeg" sizes="32x32" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.11/dist/htmx.min.js"
+      integrity="sha384-2OatzQy1H+Zd/IIrjr1TcuDGqLXeHhbooAyJY1KdQMKnr4LZ22k31GBLdYKHmVjg"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="page-about">
+    <a class="skip-link" href="#content">Skip to content</a>
+    <div
+      hx-get="includes/header.html"
+      hx-trigger="load"
+      hx-swap="outerHTML"
+    ></div>
+    <main id="content">
+      <section
+        class="hero text-inverse"
+        style="
+          background-image: url(images/stock/premium_photo-1726761637367-afdcd05c2da6.jpeg);
+        "
+      >
+        <div class="hero-inner">
+          <h1>About Us</h1>
+          <p>
+            Myles is known for his detail-oriented craftsmanship and his ability
+            to coordinate projects seamlessly alongside a trusted network of
+            skilled subcontractors
+          </p>
+        </div>
+      </section>
+      <div class="content">
+        <h2>About Myles</h2>
+        <section class="about">
+          <div>
+            <p>
+              Myles T. White, founder of Myles T. White Construction LLC, brings
+              over three decades of hands-on experience to residential
+              remodeling in the Portland metro area. A third-generation
+              carpenter, Myles began his career framing homes and built his
+              expertise from the ground up. He specializes in kitchen and
+              bathroom remodels, custom finish carpentry, and full home
+              renovations, while also offering project management and consulting
+              services. His background includes new home construction and
+              additions, giving him a well-rounded understanding of every phase
+              of a project.
+            </p>
+            <p>
+              Myles is known for his detail-oriented craftsmanship and his
+              ability to coordinate projects seamlessly alongside a trusted
+              network of skilled subcontractors. His approach is rooted in
+              integrity, clear communication, sustainability, and maintaining
+              safe, clean job sites.
+            </p>
+            <p>
+              A lifelong member of the Portland community, Myles lives in Lake
+              Oswego with his wife Elisa, who manages office operations and
+              project coordination. Together, they've raised two adult children
+              and enjoy spending time outdoors, attending music and sports
+              events, and being with family and friends.
+            </p>
+            <p>
+              <img
+                src="images/family2.jpg"
+                style="aspect-ratio: 16/7; object-fit: cover"
+                class="border-radius-md"
+                alt="Myles T. White with his family."
+              />
+            </p>
+            <p>
+              For Myles, the most important part of any project is the final
+              result—delivering a space that homeowners love and can take pride
+              in for years to come.
+            </p>
+          </div>
+          <figure>
+            <img
+              src="images/myles.jpg"
+              width="1200"
+              height="1600"
+              class="border-radius-lg"
+              alt="Myles T. White sitting on the front steps of a house."
+            />
+          </figure>
+        </section>
+      </div>
+    </main>
+    <div
+      hx-get="includes/footer.html"
+      hx-trigger="load"
+      hx-swap="outerHTML"
+    ></div>
+    <script src="js/script.js" defer></script>
+  </body>
+</html>

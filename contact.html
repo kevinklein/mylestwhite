@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us &#8211; Myles T White Construction</title>
+    <link rel="icon" href="images/favicon-32.jpeg" sizes="32x32" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.11/dist/htmx.min.js"
+      integrity="sha384-2OatzQy1H+Zd/IIrjr1TcuDGqLXeHhbooAyJY1KdQMKnr4LZ22k31GBLdYKHmVjg"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="page-contact">
+    <a class="skip-link" href="#content">Skip to content</a>
+    <div
+      hx-get="includes/header.html"
+      hx-trigger="load"
+      hx-swap="outerHTML"
+    ></div>
+    <main id="content">
+      <section
+        class="hero text-inverse"
+        style="background-image: url(images/bizcard.jpg)"
+      >
+        <div class="hero-inner">
+          <h1>Contact Us</h1>
+          <p>
+            Give us a call at <a href="tel:5039391192">503.939.1192</a> or
+            submit the form below to discuss your project and bring your vision
+            to life.
+          </p>
+        </div>
+      </section>
+      <div class="content">
+        <div class="contact-layout">
+          <form
+            class="contact-form"
+            action="mailto:myles@mtwconstruct.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <div class="field">
+              <label for="name"
+                >Name <span class="required" aria-hidden="true">*</span></label
+              >
+              <input
+                id="name"
+                type="text"
+                name="name"
+                autocomplete="name"
+                required
+                aria-required="true"
+              />
+            </div>
+            <div class="field">
+              <label for="phone"
+                >Phone <span class="required" aria-hidden="true">*</span></label
+              >
+              <input
+                id="phone"
+                type="tel"
+                name="phone"
+                autocomplete="tel"
+                required
+                aria-required="true"
+              />
+            </div>
+            <div class="field">
+              <label for="email"
+                >Email <span class="required" aria-hidden="true">*</span></label
+              >
+              <input
+                id="email"
+                type="email"
+                name="email"
+                autocomplete="email"
+                spellcheck="false"
+                required
+                aria-required="true"
+              />
+            </div>
+            <div class="field">
+              <label for="message"
+                >Tell us about your project!
+                <span class="required" aria-hidden="true">*</span></label
+              >
+              <textarea
+                id="message"
+                name="project"
+                required
+                aria-required="true"
+              ></textarea>
+            </div>
+            <button class="button" type="submit">Submit</button>
+          </form>
+          <aside class="contact-details">
+            <p>Myles T. White Construction LLC</p>
+            <p>Lake Oswego, Oregon</p>
+            <p>Phone: <a href="tel:5039391192">503.939.1192</a></p>
+            <p>
+              <a href="mailto:myles@mtwconstruct.com">myles@mtwconstruct.com</a>
+            </p>
+            <p>CCB# 200083</p>
+          </aside>
+        </div>
+      </div>
+      <section class="content reviews" aria-labelledby="contact-reviews">
+        <div class="content-inner">
+          <h2 id="contact-reviews">Reviews</h2>
+          <div class="review-grid">
+            <blockquote class="card review">
+              <p>
+                Myles helped remodel our entire kitchen. AND did an amazing job!
+                He is knowledgeable, meticulous and does clean work. I recommend
+                him to all my friends and will continue to use him for projects.
+                MYLES is the best at what he does!
+              </p>
+              <footer>Star K</footer>
+            </blockquote>
+            <blockquote class="card review review-expandable">
+              <div class="review-body">
+                <p>
+                  Myles is a joy to work with! He is an excellent communicator
+                  and might be the happiest, smiley-ist person I know. His
+                  attention to detail is above anyone I've ever encountered,
+                  which is great- because when it came to our remodel, I was
+                  very detail oriented. Myles and his team managed our entire
+                  home remodel. We tore down walls, moved the kitchen, expanded
+                  the master bathroom and added a bonus room. I very much had a
+                  vision and Myles and his team delivered.
+                </p>
+                <p>
+                  I also appreciated his two cents. Like when he suggested we
+                  create an oversized shower nook in our masterbath- that is one
+                  of my favorite features and when I see large showers now I
+                  think, why didn't they do an oversized nook?!.
+                </p>
+                <p>
+                  Two years after the house was complete we renovated our
+                  backyard and Myles installed a clear cedar floating bench. I
+                  completely relied on his expertise on how to do it for the
+                  best outcome. I basically said, this is what I want it to look
+                  like- and viola.
+                </p>
+                <p>
+                  We just sold the house, and although we will miss it, we look
+                  forward to our next house where we are sure to hire Myles.
+                  (I've already seen a couple of houses where the projects are
+                  in my head and I know Myles will deliver my vision). His
+                  experience with materials and the industry makes him a great
+                  resource when trying to bounce ideas when you might be torn
+                  between a couple of options.
+                </p>
+                <p>Myles receives my highest recommendation!</p>
+              </div>
+              <footer>Lisa Mac</footer>
+              <button
+                type="button"
+                class="review-toggle"
+                aria-expanded="false"
+              >
+                View more
+              </button>
+            </blockquote>
+            <blockquote class="card review">
+              <p>His honesty! Knowledge and workmanship.</p>
+              <footer>John P</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div
+      hx-get="includes/footer.html"
+      hx-trigger="load"
+      hx-swap="outerHTML"
+    ></div>
+    <script src="js/script.js" defer></script>
+  </body>
+</html>

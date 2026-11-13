@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects &#8211; Myles T White Construction</title>
+    <link rel="icon" href="images/favicon-32.jpeg" sizes="32x32" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/litelight-js@1.2.0/dist/lite-light.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.11/dist/htmx.min.js"
+      integrity="sha384-2OatzQy1H+Zd/IIrjr1TcuDGqLXeHhbooAyJY1KdQMKnr4LZ22k31GBLdYKHmVjg"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="page-projects">
+    <a class="skip-link" href="#content">Skip to content</a>
+    <div
+      hx-get="includes/header.html"
+      hx-trigger="load"
+      hx-swap="outerHTML"
+    ></div>
+    <main id="content">
+      <section
+        class="hero text-inverse"
+        style="
+          background-image: url(images/stock/point3d-commercial-imaging-ltd-90Y7tjHJbFo-unsplash.jpg);
+        "
+      >
+        <div class="hero-inner">
+          <h1>Projects and Services</h1>
+          <p>
+            Myles brings unmatched attention to detail, steady focus, and a
+            dedication to homeowner satisfaction that defines his work.
+          </p>
+        </div>
+      </section>
+      <section class="content">
+        <div class="content-inner project-list">
+          <section class="services-block">
+            <div>
+              <p class="text-md">
+                Myles is known for his detail-oriented craftsmanship and his
+                ability to coordinate projects seamlessly alongside a trusted
+                network of skilled subcontractors. His approach is rooted in
+                integrity, clear communication, sustainability, and maintaining
+                safe, clean job sites.
+              </p>
+              <p>
+                <a href="contact.html" class="button button-lg mt-7 shadow"
+                  >Get a free estimate
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                    class="ml-2"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
+              </p>
+            </div>
+            <div>
+              <h2 class="text-xl mb-3">Services</h2>
+              <ul style="padding: 0 0 0 1rem; margin: 0">
+                <li>Full Home Remodeling</li>
+                <li>Kitchen Remodeling</li>
+                <li>Bathroom Remodeling</li>
+                <li>Custom Finish Carpentry &amp; Woodwork</li>
+                <li>Home Additions</li>
+                <li>New Construction Support</li>
+                <li>Project Management</li>
+                <li>Construction Consulting</li>
+              </ul>
+            </div>
+          </section>
+          <article id="kitchen" class="card project-block">
+            <div>
+              <h2>Kitchen</h2>
+              <p>
+                Kitchen remodeling enim expedita adipiscing ea lorem accusamus
+                deleniti temporibus soluta cum enim nobis anim eligendi et
+                officia est anim.
+              </p>
+              <div class="project-strip">
+                <img
+                  src="images/stock/josbra-design-1eWGq_l_DuU-unsplash.jpg"
+                  data-lightbox="images/stock/josbra-design-1eWGq_l_DuU-unsplash.jpg"
+                  alt="Project name: description here adipiscing ea lorem soluta cum enim nobis anim."
+                />
+              </div>
+            </div>
+            <img
+              src="images/stock/kitchen.jpg"
+              class="border-radius-md"
+              alt="White kitchen with a marble island and brass faucet."
+            />
+          </article>
+          <article id="bath" class="card project-block">
+            <div>
+              <h2>Bath</h2>
+              <p>
+                Bathroom remodeling voluptatem aliquid non doloribus quia dolore
+                iusto quod qui sed in quas enim ex est id et qui.
+              </p>
+            </div>
+            <img
+              src="images/stock/clay-banks-ckdoA-tv9uw-unsplash.jpg"
+              class="border-radius-md"
+              alt="Bathroom with a glass shower and a double vanity."
+            />
+          </article>
+          <article id="living" class="card project-block">
+            <div>
+              <h2>Living</h2>
+              <p>
+                Living room remodeling lorem ipsum dolor sit amet
+                consecteturenim expedita adipiscing ea lorem soluta cum enim
+                nobis anim eligendi et officia est anim voluptatem aliquid non
+                doloribus quia.
+              </p>
+            </div>
+            <img
+              src="images/harmonmacayastudy.jpg"
+              class="border-radius-md"
+              alt="Living room with a wood ceiling beam, gray sofa, and a desk along the far wall."
+            />
+          </article>
+          <article id="exteriors" class="card project-block">
+            <div>
+              <h2>Exteriors</h2>
+              <p>
+                Exterior remodeling lorem ipsum dolor sit amet consecteturenim
+                expedita adipiscing ea lorem accusamus deleniti temporibus
+                soluta cum enim nobis anim eligendi et officia est anim
+                voluptatem aliquid non doloribus quia.
+              </p>
+            </div>
+            <img
+              src="images/exterior.jpg"
+              alt="House exterior with a new covered deck under construction."
+            />
+          </article>
+        </div>
+      </section>
+    </main>
+    <div
+      hx-get="includes/footer.html"
+      hx-trigger="load"
+      hx-swap="outerHTML"
+    ></div>
+    <script src="js/script.js" defer></script>
+    <script type="module">
+      import { init } from "https://unpkg.com/litelight-js@1.2.0/dist/lite-light.min.js";
+      init({ imageSelector: ".project-strip img[data-lightbox]" });
+    </script>
+  </body>
+</html>
