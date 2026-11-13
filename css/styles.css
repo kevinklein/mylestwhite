@@ -125,10 +125,11 @@ img {
 }
 
 .button-outline-inverse:hover,
+.text-inverse .button-outline-inverse:hover,
 .button-outline-inverse:focus-visible {
   background: #fff;
   border-color: #fff;
-  color: var(--contrast);
+  color: #000 !important;
 }
 
 .sr-only {
