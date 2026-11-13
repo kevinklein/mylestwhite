@@ -425,7 +425,7 @@ h1 {
 .site-footer {
   position: relative;
   isolation: isolate;
-  padding: min(2.5rem, 3.5vw) var(--pad);
+  padding: min(1.25rem, 1.75vw) var(--pad);
   background: var(--primary);
   color: #fff;
 }
@@ -448,7 +448,7 @@ h1 {
 
 .footer-grid {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: var(--gap);
 }
 
@@ -785,7 +785,7 @@ h1 {
 .project-strip {
   display: flex;
   align-items: center;
-  gap: var(--gap);
+  gap: .75rem;
 }
 
 .project-strip img {
@@ -794,6 +794,16 @@ h1 {
   object-fit: cover;
   width: 100px;
   cursor: zoom-in;
+  outline: 3px solid transparent;
+  outline-offset: 0;
+  transition: transform 0.12s ease-out;
+  will-change: transform;
+  border-radius: 0.25em;
+
+  &:hover {
+    transform: scale(1.05);
+    outline-color: var(--primary);
+  }
 }
 
 .project-list {
